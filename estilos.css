@@ -1,0 +1,135 @@
+*{
+    margin: 0 auto;
+}
+#mainses{
+    background-color: #1D1D1D;
+}
+#iniform{
+    text-align: center;
+    padding-top: 170px;
+    background-color:  #1D1D1D;
+    background-size: cover;
+    height: 620px;
+}
+#mainses{
+    height: 790px;
+}
+ul{
+    display: inline-block;
+}
+#h1formmod{
+    padding-bottom: 10px;
+    color: white;
+    
+}
+#formadd{
+    height: 700px;
+    padding: 70px;
+    text-align: center;
+    width: 75%;
+}
+#formbs{
+    text-align: center;
+    height: 700px;
+    padding: 70px;
+    text-align: center;
+    width: 75%;
+}
+#h1add{
+    background-color: #679fff;
+    color: white;
+}
+#h1mod{
+    background-color: #679fff;
+    color: white;
+}
+#h1adbs{
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+}
+#h1ini{
+    background-color: #2272ff;
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+}
+#h1base{
+    background-color: #679fff;
+    color: white;
+}
+#h1form{
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+}
+#maindb{
+    background-color: #1D1D1D;
+    height: 700px;
+}
+footer{
+    padding-bottom: 40px;
+    background-color: #2272ff;
+}
+#headerses{
+    background-image: url(img/fondo_inicio_sesion.png);
+    background-size: cover;
+    color: white;
+}
+#mainadd, #mainmod{
+    height: 850px;
+    background-color: #1D1D1D;
+}
+input, select{
+    width: 20%;
+    padding: 15px;
+    margin: 8px;
+}
+select{
+    font-size: 1.1em;
+}
+label{
+    font-size: 1.3em;
+    color: white;
+    padding-bottom: 40px;
+    width: 10%;
+}
+::placeholder{
+    font-size: 1.2em;
+}
+button{
+    width: 20%;
+    font-size: 1.3em;
+    border-radius: 8%;
+}
+h1{
+    text-align: center;
+    font-size: 2.3em;
+}
+a{
+    text-decoration: none;
+    color:  #ffffff;
+}
+nav{
+    text-align: center;
+    padding: 20px;
+    background-color: #2272ff;
+}
+li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 1.4em;
+}
+ul{
+    color: white;
+}
+#h2in{
+    text-align: center;
+}
+#pin{
+    text-align: left;
+    width: 70%;
+}
+.divtext{
+    text-align: center;
+}
