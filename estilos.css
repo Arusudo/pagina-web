@@ -1,5 +1,6 @@
 *{
     margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #mainses{
     background-color: #1D1D1D;
@@ -20,7 +21,6 @@ ul{
 #h1formmod{
     padding-bottom: 10px;
     color: white;
-    
 }
 #formadd{
     height: 700px;
@@ -34,6 +34,33 @@ ul{
     padding: 70px;
     text-align: center;
     width: 75%;
+}
+#headerindex{
+    background-color: #679fff;
+    color: white;
+    font-size: 3em;
+    padding: 50px;
+    border-bottom: 5px solid blue;
+}
+#mianindex{
+    background-color: #1D1D1D;
+    height: 700px;
+}
+#sectionindex{
+    width: 50%;
+}
+#h2index{
+    text-align: center;
+    font-size: 4em;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+#pindex{
+    font-size: 1.8em;
+    text-align: center;
+}
+#h2index, #pindex{
+    color: white;
 }
 #h1add{
     background-color: #679fff;
@@ -112,8 +139,9 @@ a{
 }
 nav{
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #2272ff;
+    border-bottom: 5px solid blue;
 }
 li{
     display: inline-block;
