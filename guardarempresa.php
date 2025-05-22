@@ -3,7 +3,7 @@
 require 'conexion_bd.php'; //hay requiere en vez de include porque aui si no hay archio de conexion da fallo fatal y no sigue el script
 
 //son los campos del formulario y los interrogantes siendo marcadores de posiciion es que si el campo esta vaciio se usa una cadena vacio como valor por defecto
-$nombre    = trim($_POST['nemp'] ?? ''); 
+$nombre    = trim($_POST['nemp'] ?? ''); // el trim elimina espacios delante y dtras de la palbra
 $ubicacion   = trim($_POST['ubiemp'] ?? ''); 
 $CIF = trim($_POST['CIF'] ?? '');
 $telefono    = trim($_POST['numerotel'] ?? '');

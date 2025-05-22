@@ -17,8 +17,8 @@
         </ul>
     </nav>
     <main id="maindb">
-        <form action="buscador.php" method="post">
-            
+        <form action="buscador.php" method="post" id="formbs">
+
             <label for="busqueda">Busca lo que necesites aquí</label>
             <input type="text" id="busqueda" name="busqueda" placeholder="Busca aquí">
 
