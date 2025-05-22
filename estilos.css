@@ -31,7 +31,7 @@ ul{
 }
 #formtutoresemp{
     text-align: center;
-    height: 700px;
+    height: 800px;
     padding: 70px;
     text-align: center;
     width: 75%;
@@ -117,9 +117,15 @@ footer{
     background-size: cover;
     color: white;
 }
-#mainadd, #mainmod{
-    height: 850px;
+#mainmod{
+    height: 900px;
+}
+#mainadd{
+    height: 1000px;
     background-color: #1D1D1D;
+}
+#sectiontut{
+    height: 900px;
 }
 input, select{
     width: 20%;

@@ -10,15 +10,15 @@
     </header>
     <nav>
          <ul>
-            <li><a href="formtutoresemp.html">Formulario tutores de empresa</a></li>
-            <li><a href="BS.html">Base de datos</a></li>
+            <li><a href="formtutoresemp.php">Formulario tutores de empresa</a></li>
+            <li><a href="BS.php">Base de datos</a></li>
             <li><a href="#">Formulario empresas</a></li>
-            <li><a href="formrepresentantes.html">Formulario representantes</a></li>
+            <li><a href="formrepresentantes.php">Formulario representantes</a></li>
         </ul>
     </nav>
     <main id="mainmod">
         <section>
-        <form action="guardar.php" method="post" id="formempresas">
+        <form action="guardarempresa.php" method="post" id="formempresas">
 
             <h1 id="h1formmod">Formulario para empresas</h1>
             
@@ -38,13 +38,13 @@
             <input type="text" name="famprof" id="famprof" placeholder="Esccriba las familias profesionales aquí"><br>
 
             <label for="hora">Escriba el horario de la empresa</label><br>
-            <input type="number" id="hora" name="hora" placeholder="Escriba la hora aquí"><br>
+            <input type="text" id="hora" name="hora" placeholder="Escriba la hora aquí"><br>
 
             <label for="lista">Elija una opción</label><br>
-            <select name="lista" id="listaemp">
+            <select name="privacidad" id="privacidad">
                 <option value="">Elija una opción</option>
                 <option value="Publica">Pública</option>
-                <option value="Priada">Privada</option>
+                <option value="Privada">Privada</option>
             </select><br>
             <button type="submit">Envíar</button>
         </form>

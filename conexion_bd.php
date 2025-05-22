@@ -9,4 +9,3 @@ $conexion->set_charset("utf8");
 if ($conexion->connect_error) { //es una condicional que dice que si hay un fallo de conexion haga lo de abajo
     die ("conexion fallida".$conexion->connect_error); // die como bien dice su nombre es muere, y hace que si se cumple la condicional mate la conexion
 }
-?>

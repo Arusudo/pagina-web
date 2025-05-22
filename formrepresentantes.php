@@ -12,19 +12,19 @@
     </header>
      <nav>
         <ul>
-            <li><a href="formtutoresemp.html">Formulario tutores de empresa</a></li>
-            <li><a href="BS.html">Base de datos</a></li>
-            <li><a href="formempresa.html">Formulario empresas</a></li>
+            <li><a href="formtutoresemp.php">Formulario tutores de empresa</a></li>
+            <li><a href="BS.php">Base de datos</a></li>
+            <li><a href="formempresa.php">Formulario empresas</a></li>
             <li><a href="#">Formulario representantes</a></li>
         </ul>
     </nav>
     <main id="mainformrep">
         <section>
-            <form action="guardar.php" method="post" ids="foormrepresentantes">
+            <form action="guardarepresentantes.php" method="post" id="foormrepresentantes">
             <h1 id="h1formmod">Formulario para tabla de representantes</h1>
 
             <label for="Nombreemp">Escriba el DNI del/la representante</label><br>
-            <input type="text" name="nemp" id="nemp" placeholder="Escriba el nombre aquí"><br>
+            <input type="text" name="dni" id="dni" placeholder="Escriba el DNI aquí"><br>
 
             <label for="ubiemp">Escriba el nombre del/la representante</label><br>
             <input type="text" name="ubiemp" id="ubiemp" placeholder="Escriba aquí el nombre"><br>
@@ -33,7 +33,7 @@
             <input type="text" name="CIF" id="CIF" placeholder="Escriba el CIF aquí"><br>
 
             <label for="number">Escriba el correo electronico</label><br>
-            <input type="number" name="numerotel" id="numerotel" placeholder="Escriba el email aquí"><br>
+            <input type="text" name="numerotel" id="numerotel" placeholder="Escriba el email aquí"><br>
 
             <button type="submit">Envíar</button>
         </form>
