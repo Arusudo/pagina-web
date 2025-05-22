@@ -28,6 +28,7 @@ ul{
     padding: 70px;
     text-align: center;
     width: 75%;
+    background-color: #1D1D1D;
 }
 #formtutoresemp{
     text-align: center;
@@ -119,6 +120,10 @@ footer{
 }
 #mainmod{
     height: 900px;
+    background-color: #1D1D1D;
+}
+#sectionemp{
+    background-color: #1D1D1D;
 }
 #mainadd{
     height: 1000px;

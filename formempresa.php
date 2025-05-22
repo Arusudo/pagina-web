@@ -17,7 +17,7 @@
         </ul>
     </nav>
     <main id="mainmod">
-        <section>
+        <section id="sectionemp">
         <form action="guardarempresa.php" method="post" id="formempresas">
 
             <h1 id="h1formmod">Formulario para empresas</h1>
