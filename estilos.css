@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 #mainses{
     background-color: #1D1D1D;
@@ -55,6 +56,7 @@ ul{
     background-color: #1D1D1D;
     height: 700px;
 }
+
 #sectionindex{
     width: 50%;
 }
@@ -100,8 +102,7 @@ ul{
     font-size: 2.3em;
 }
 #maindb{
-    background-color: #1D1D1D;
-    height: 700px;
+    height: 900px;
 }
 #mainformrep{
     background-color: #1D1D1D;
@@ -184,5 +185,14 @@ ul{
     width: 70%;
 }
 .divtext{
-    text-align: center;
+    text-align: center; 
+}
+h2 {
+  text-align: center; 
+  margin-top: 40px;        
+  margin-bottom: 10px;            
+}
+
+table {
+  margin-bottom: 40px;   
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html> <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="./estilos.css">
         <title>BD FP Dual</title>
     </head>
     <body>
@@ -17,13 +17,11 @@
         </ul>
     </nav>
     <main id="maindb">
-        <form action="buscador.php" method="post" id="formbs">
+        
+        <?php
+            require 'ver_tablas.php';
+        ?>
 
-            <label for="busqueda">Busca lo que necesites aquí</label>
-            <input type="text" id="busqueda" name="busqueda" placeholder="Busca aquí">
-
-            <button type="submit">Buscar</button>
-        </form>
     </main>
     <footer>
         <p>LOS DÖNER</p> 
