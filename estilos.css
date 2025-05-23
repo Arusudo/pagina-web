@@ -46,11 +46,17 @@ ul{
     width: 75%;
 }
 #headerindex{
-    background-color: #679fff;
+    background-color: rgb(210, 160, 95);
     color: white;
     font-size: 3em;
     padding: 50px;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid rgb(180, 116, 32);
+}
+header{
+    border-bottom: 5px solid rgb(180, 116, 32);
+    border-top: 5px solid rgb(180, 116, 32);
+    background-color: rgb(210, 160, 95);
+    padding: 50px;
 }
 #mianindex{
     background-color: #1D1D1D;
@@ -74,11 +80,9 @@ ul{
     color: white;
 }
 #h1add{
-    background-color: #679fff;
     color: white;
 }
 #h1mod{
-    background-color: #679fff;
     color: white;
 }
 #h1adbs{
@@ -87,13 +91,11 @@ ul{
     font-size: 2.3em;
 }
 #h1ini{
-    background-color: #2272ff;
     color: white;
     text-align: center;
     font-size: 2.3em;
 }
 #h1base{
-    background-color: #679fff;
     color: white;
 }
 #h1form{
@@ -110,7 +112,7 @@ ul{
 }
 footer{
     padding-bottom: 20px;
-    background-color: #2272ff;
+    background-color: rgb(210, 160, 95);
     text-align: right;
     color: white;
 }
@@ -166,8 +168,8 @@ a{
 nav{
     text-align: center;
     padding: 15px;
-    background-color: #2272ff;
-    border-bottom: 5px solid blue;
+    background-color: rgb(210, 160, 95);
+    border-bottom: 5px solid rgb(180, 116, 32);
 }
 li{
     display: inline-block;
