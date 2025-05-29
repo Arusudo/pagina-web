@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //es una condicional, es para ue se 
 
             if ($clave === $usuarioData['password']) { //comprueba que la conraseña es correcta
                 $_SESSION['usuario'] = $usuarioData['user']; //comprueba que el usuario es correcta
-                header("Location: index.html"); //una vez aceptada la sesion te redirige a la pgina de index
+                header("Location: inicio.html"); //una vez aceptada la sesion te redirige a la pgina de index
                 exit; //detiene la ejecucion de todo el codigo 
             } else { // es parte de la condicional, si no se cumple el if de arriba pasa a esta parte
                 echo "<div>ACCESO DENEGADO: Contraseña incorrecta</div>"; //muestra el mensaje de dentro del di

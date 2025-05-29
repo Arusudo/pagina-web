@@ -32,6 +32,7 @@ $consultasql->bind_param("sssssss", $CIF, $nombre, $ubicacion, $familia, $telefo
 // cuando se envia el formulario correctamente ejecuta la consulta y mete los datos a la base de datos
 if ($consultasql->execute()) {
     $exito=true; //marca que tod ha ido bien
+    echo "1";
 } else {
    echo "Error al guardar: " . $consultasql->error; //si no imprime este mensaje en pantalla
 }
@@ -40,7 +41,7 @@ if ($consultasql->execute()) {
 $consultasql->close();
 $conexion->close();
 if($exito) {
-    header("location: formempresa.php");
+    // header("location: formempresa.php");
     echo "Empresa guardada crrectamente.";
     exit;
 }

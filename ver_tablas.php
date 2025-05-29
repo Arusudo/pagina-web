@@ -2,30 +2,27 @@
 
 require 'conexion_bd.php'; // incluye el achivo de conexion
 
+
 $busqueda = trim($_POST['busqueda'] ?? ''); // recoge lo que se ha escrito en el buscador y las comillas es ue si no hay nada llosustituye por un valor blanco o cero
 
 function mostrarTabla($conexion, $tablaNombre, $tituloVisible) { // function es una funcion reutilizable y sirve para conectarse a una tabla especifica, mostrar los datos de lat abla y que aparezca como una tabla HTML
     global $busqueda; //es una vvariable ue se puede utilizar en todo el codigo, se puede usar dentro de uan funcion o fuera
 
-    $campos = obtenerCampos($conexion, $tablaNombre);
-    if (empty($campos)) return; // si no hay columnas, sal del todo
-
     if ($busqueda !== '') { //comrpueba si la variable busqueda no esta vacia
         $busquedaEscapada = $conexion->real_escape_string($busqueda); //evita ataques e inyeccion sql
         $sql = "SELECT * FROM $tablaNombre WHERE CONCAT_WS('', " . //la variable de tablanombre son los nombres de la tabla y concat_ws concatena los valores de las columnas
-            implode(', ', array_map(fn($campo) => "`$campo`", $campos)) .// es una funcion que deuelve un array con los nombres de las olumnas de la tabla, tambien ecorre el array de columnas y envuelve cada nombre con ` para que MySQL lo interprete biens
-            //el implode coonvierte el array en una cadena de texto o string
+            implode(', ', obtenerCampos($conexion, $tablaNombre)) . // es una funcion que deuelve un array con los nombres de las olumnas de la tabla
+            //el implode cooniert el array en una cadena de texto o string
             ") LIKE '%$busquedaEscapada%'"; //si la cadena concatenada contiene lo que has buscadoo esa fila se devuelve
     } else {
-        // si no hay búsqueda, mostrar toda la tabla sin filtro
-        $sql = "SELECT * FROM $tablaNombre";
+        $sql = "SELECT * FROM $tablaNombre"; // aqui no se pone el nombre de la tabla porque la function al ser reutilizable sirve para varias tablas
     }
 
     $resultado = $conexion->query($sql); // la preparacion de la consulta sql
 
     if ($resultado && $resultado->num_rows > 0) { //resultadoo verifica la consulta sql si se ha hecho sin fallos y num_rows comprueba que almenos devuelva 1 fila
-        echo "<h2>$tituloVisible</h2>"; // si se cumplen las dos condiciones se rea la tabla
-        echo "<table border='1'>"; // abre la tabla con borde para que se vea mejor
+        echo "<h2>$tituloVisible</h2>"; // si se cumplen las dos condiciones se crea la tabla
+        echo "<table>"; // abre la tabla
 
         // Encabezados
         echo "<tr>"; // el tr abre una fila de tabla que va a obtener los encabezados
@@ -40,7 +37,7 @@ function mostrarTabla($conexion, $tablaNombre, $tituloVisible) { // function es 
             foreach ($fila as $valor) { // recoorre cada valor individual de la fila actual
                 echo "<td>" . htmlspecialchars($valor) . "</td>"; //muestra el valor d eelda dentro de td
             } // htmlspecialchars evita inyecciones html por ejemplo si alguien pone en el formulario <script>
-            echo "</tr>"; //cierrra una parte de la tabla
+            echo "</tr>"; //cierra una parte de la tabla
         }
 
         echo "</table><br>"; //cierra la tabla y añade un salto de linea
@@ -51,18 +48,18 @@ function mostrarTabla($conexion, $tablaNombre, $tituloVisible) { // function es 
 
 // Esta función extrae el nombre de todos los campos (columnas) de una tabla
 function obtenerCampos($conexion, $tablaNombre) {
-    $resultado = $conexion->query("DESCRIBE $tablaNombre"); // esto es una consulta que devulve una descripcion de todas las columnas
-    $campos = []; // es un array vacio para guardar los nombres de las columnas que devuelve el bucle de abajo 
-
-    while ($fila = $resultado->fetch_assoc()) { // hace un bucle que va fila por fila de la consulta sql
-        $campos[] = $fila['Field']; // devuelve el nombre de la columna como CIF ademas de meter los nombres en un array
+    $resultado = $conexion->query("DESCRIBE $tablaNombre");
+    $campos = [];
+    while ($fila = $resultado->fetch_assoc()) {
+        $campos[] = $fila['Field'];
     }
-    return $campos; // devuelve un array con todas las columnas
+    return $campos;
 }
 
-// Mostramos tres tablas distintas siempre, si hay búsqueda se filtra, si no hay se muestra todo
+// Mostramos tres tablas distintas
 mostrarTabla($conexion, 'empresas', 'Empresas'); // esto muestra la tabla empresas y el segundo nombre es el titulo de la tabla visible
 mostrarTabla($conexion, 'representantes', 'Representantes'); // lo mismo con esta linea 
 mostrarTabla($conexion, 'tutor_empresa', 'Tutores de Empresa'); // lo mismo con esta otra
 
 $conexion->close();
+?>

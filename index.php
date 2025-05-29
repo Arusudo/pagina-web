@@ -14,9 +14,10 @@
                 <h1 id="h1form">Inicio de sesión</h1>
             </div>
             <?php
+            error_reporting(E_ALL);
+            ini_set("display_errors", 1);
             // esto es para que incluya los archivos php de conexion a la BS y el controlador del formulario
             include("conexion_bd.php");
-            include("controlador.php");
             ?>
             <section>
             <form action="controlador.php" method="post" id="iniform"> 
