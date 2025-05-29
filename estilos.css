@@ -8,13 +8,18 @@
 }
 #iniform{
     text-align: center;
-    padding-top: 160px;
-    background-color:  #1D1D1D;
     background-size: cover;
-    height: 620px;
+    height: 320px;
+    width: 50%;
+    border: 5px solid white;
+    padding-top: 50px;
+}
+#divini{
+    padding: 140px;
 }
 #mainses{
-    height: 790px;
+    height: 680px;
+    background-color:  #1D1D1D;
 }
 ul{
     display: inline-block;
@@ -135,26 +140,29 @@ footer{
 #sectiontut{
     height: 900px;
 }
-input, select{
-    width: 20%;
+input{
+    width: 30%;
     padding: 15px;
     margin: 8px;
 }
 select{
     font-size: 1.1em;
+    width: 25%;
+    padding: 15px;
+    margin: 8px;
 }
 label{
-    font-size: 1.3em;
+    font-size: 1.6em;
     color: white;
     padding-bottom: 40px;
     width: 10%;
 }
 ::placeholder{
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 button{
-    width: 22.3%;
-    font-size: 1.3em;
+    width: 33%;
+    font-size: 1.5em;
     border-radius: 8%;
 }
 h1{
