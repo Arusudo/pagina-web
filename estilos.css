@@ -4,7 +4,8 @@
 
 }
 #mainses{
-    background-color: #1D1D1D;
+    background-image: url(img/bajo-aragón.jpg);
+    height: 680px;
 }
 #iniform{
     text-align: center;
@@ -13,13 +14,10 @@
     width: 50%;
     border: 5px solid white;
     padding-top: 50px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 #divini{
     padding: 140px;
-}
-#mainses{
-    height: 680px;
-    background-color:  #1D1D1D;
 }
 ul{
     display: inline-block;
