@@ -34,7 +34,6 @@
             </section>
         </main>
         <footer>
-          LOS DÖNER  
         </footer>
     </body>
     </html>

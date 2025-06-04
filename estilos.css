@@ -6,6 +6,7 @@
 #mainses{
     background-image: url(img/bajo-aragón.jpg);
     height: 680px;
+    background-size: cover;
 }
 #iniform{
     text-align: center;
@@ -14,7 +15,7 @@
     width: 50%;
     border: 5px solid white;
     padding-top: 50px;
-     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(94, 94, 94, 0.2);
 }
 #divini{
     padding: 140px;
@@ -114,7 +115,7 @@ header{
     text-align: center;
 }
 footer{
-    padding-bottom: 20px;
+    padding: 20px;
     background-color: rgb(210, 160, 95);
     text-align: right;
     color: white;
@@ -139,7 +140,7 @@ footer{
     height: 900px;
 }
 input{
-    width: 30%;
+    width: 45%;
     padding: 15px;
     margin: 8px;
 }
@@ -162,6 +163,10 @@ button{
     width: 33%;
     font-size: 1.5em;
     border-radius: 8%;
+    color: white;
+    background-color: rgb(210, 160, 95);
+    margin: 10px;
+    padding: 5px;
 }
 h1{
     text-align: center;
